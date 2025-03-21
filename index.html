@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -16,81 +17,95 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn frontend</h1>
-          <p>
-            Go from being a beginner to being a pro with a simplified process
-          </p>
-          <button>Start now</button>
+        <div class="row">
+          <div>
+            <h1>Best place to learn frontend</h1>
+            <p class="subheader">
+              Go from being a beginner to being a pro with a simplified process
+            </p>
+            <button>Start now</button>
+          </div>
+          <figure>
+            <img src=".assets/laptop.png" alt="Home page image" />
+          </figure>
         </div>
-        <figure>
-          <img src=".assets/laptop.png" alt="Home page image" />
-        </figure>
       </header>
     </section>
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius sit
-            eum quam, at perspiciatis doloremque fugit! Nemo blanditiis
-            reprehenderit quasi esse consequuntur, dolores temporibus?
-            Aspernatur numquam hic amet doloribus fugit?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ut
-            maxime accusantium quaerat suscipit vero nemo corporis, culpa quia
-            nisi, modi, hic labore praesentium? Exercitationem possimus
-            asperiores expedita fugiat assumenda!
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+                sit eum quam, at perspiciatis doloremque fugit! Nemo blanditiis
+                reprehenderit quasi esse consequuntur, dolores temporibus?
+                Aspernatur numquam hic amet doloribus fugit?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+                ut maxime accusantium quaerat suscipit vero nemo corporis, culpa
+                quia nisi, modi, hic labore praesentium? Exercitationem possimus
+                asperiores expedita fugiat assumenda!
+              </p>
+            </div>
+            <figure class="about__image--wrapper">
+              <img src="./assets/about.jpg" alt="" />
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="" />
-        </figure>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="Discord" />
-          <div>
-            <p>
+        <div class="row">
+        <div class="section__description">
+          <figure class="about__image--wrapper">
+            <img src="./assets/discord.png" alt="Discord" />
+          </figure>
+          <div class="section__description--wrapper">
+            <p class="section__description--para">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
               rerum neque autem enim quod quos, odit laborum fuga dolorum fugiat
               porro soluta! Illo vel laborum quasi voluptatem pariatur.
               Incidunt, labore?
             </p>
-            <p>
+            <p class="section__description--para">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
               repudiandae, molestiae veritatis architecto aliquam est quia qui
               mollitia eaque sapiente explicabo rerum asperiores quas. Ullam
               reiciendis culpa exercitationem maiores id?
             </p>
           </div>
-        </figure>
+        </div>
+      </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
           <label for="email">Email</label>
-          <input type="text" placeholder="jane@example.com" />
+          <input type="email" placeholder="jane@example.com" />
           <label for="message">Message</label>
-          <textarea type="text" placeholder="Enter message here"></textarea>
+          <textarea
+            type="text"
+            placeholder="Cool website, lets get connected!"
+          ></textarea>
+          <button>Contact Us!</button>
         </form>
       </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
-        </div>
-        <p>Copyright Frontend Simplified</p>
+      <img class="footer__logo" src="./assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
+      </div>
+      <p>Copyright Frontend Simplified</p>
     </footer>
   </body>
 </html>
